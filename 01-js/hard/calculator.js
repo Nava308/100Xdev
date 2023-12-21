@@ -137,7 +137,6 @@ class Calculator {
       if (!tokens) {
         throw new Error("Invalid characters in the expression.");
       }
-      console.log(tokens);
       this.evaluate(tokens);
     } catch (error) {
       throw error;
