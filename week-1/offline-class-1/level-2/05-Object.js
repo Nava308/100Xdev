@@ -26,5 +26,8 @@ const sampleObject = {
   key2: "value2",
   key3: "value3",
 };
+for ([key, val] of Object.entries(sampleObject)) {
+  console.log(key, val);
+}
 
 objectMethods(sampleObject);
