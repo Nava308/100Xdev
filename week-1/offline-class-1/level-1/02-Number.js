@@ -8,7 +8,7 @@ function explainParseInt(value) {
 explainParseInt("42");
 explainParseInt("42px");
 explainParseInt("3.14");
-
+explainParseInt("abc");
 function explainParseFloat(value) {
   console.log("Original Value:", value);
   let result = parseFloat(value);
