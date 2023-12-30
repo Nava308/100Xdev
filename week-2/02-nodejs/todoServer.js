@@ -18,7 +18,7 @@
     
   3. POST /todos - Create a new todo item
     Description: Creates a new todo item.
-    Request Body: JSON object representing the todo item.
+    Request Body: JSON object representing the todo item. 
     Response: 201 Created with the ID of the created todo item in JSON format. eg: {id: 1}
     Example: POST http://localhost:3000/todos
     Request Body: { "title": "Buy groceries", "completed": false, description: "I should buy groceries" }
@@ -39,11 +39,11 @@
 
   Testing the server - run `npm run test-todoServer` command in terminal
  */
-  const express = require('express');
-  const bodyParser = require('body-parser');
-  
-  const app = express();
-  
-  app.use(bodyParser.json());
-  
-  module.exports = app;
+const express = require("express");
+const bodyParser = require("body-parser");
+
+const app = express();
+
+app.use(bodyParser.json());
+
+module.exports = app;
